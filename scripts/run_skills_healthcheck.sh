@@ -95,7 +95,7 @@ run_check "tmux installed" "tmux -V"
 run_check "ffmpeg installed (video-frames)" "ffmpeg -version | head -n 1"
 
 # Integration checks (depends on env)
-run_check "summarize model call (Gemini)" '[[ -n "${GEMINI_API_KEY:-}" ]] && GEMINI_API_KEY="${GEMINI_API_KEY:-}" summarize /etc/hosts --model google/gemini-3.1-pro-preview --length short >/dev/null' "warn"
+run_check "summarize model call (Gemini)" '[[ -n "${GEMINI_API_KEY:-}" ]] && echo "OpenClaw summarize smoke test" > /tmp/summarize-smoke.txt && GEMINI_API_KEY="${GEMINI_API_KEY:-}" summarize /tmp/summarize-smoke.txt --model google/gemini-3.1-pro-preview --length short >/dev/null' "warn"
 run_check "gog account listing" '[[ -n "${GOG_KEYRING_PASSWORD:-}" ]] && GOG_KEYRING_PASSWORD="${GOG_KEYRING_PASSWORD:-}" gog auth list --json >/dev/null' "warn"
 run_check "tavily search script" '[[ -n "${TAVILY_API_KEY:-}" ]] && TAVILY_API_KEY="${TAVILY_API_KEY:-}" node "$HOME/.openclaw/workspace/skills/tavily-search/scripts/search.mjs" "OpenClaw" -n 1 >/dev/null' "warn"
 
