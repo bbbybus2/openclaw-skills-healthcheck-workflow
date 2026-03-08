@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-03-08T17:22:51+08:00",
+  "host": "VM-0-4-ubuntu",
+  "runner": "ubuntu",
+  "summary": {"pass": 10, "warn": 2, "fail": 0},
+  "checks": [
+  {"name": "clawhub CLI", "status": "PASS", "detail": "github  1.0.0 proactive-agent  3.1.0 gog  1.0.0 mcporter  1.0.0 "},
+  {"name": "GitHub CLI installed", "status": "PASS", "detail": "gh version 2.45.0 (2025-07-18 Ubuntu 2.45.0-1ubuntu0.3) https://github.com/cli/cli/releases/tag/v2.45.0 "},
+  {"name": "GitHub auth", "status": "PASS", "detail": "github.com   \u2713 Logged in to github.com account bbbybus2 (/home/ubuntu/.config/gh/hosts.yml)   - Active account: true   - Git operations protocol: https "},
+  {"name": "gog CLI installed", "status": "PASS", "detail": "Usage: gog <command> [flags] Build: v0.11.0 (91c4c15)  Google CLI for "},
+  {"name": "mcporter CLI installed", "status": "PASS", "detail": "mcporter \u2014 Model Context Protocol CLI & generator  Usage: mcporter <command> [options]  "},
+  {"name": "nano-pdf CLI installed", "status": "PASS", "detail": "                                                                                  Usage: nano-pdf [OPTIONS] COMMAND [ARGS]...                                                                                                                      \u256d\u2500 Options \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e "},
+  {"name": "summarize CLI installed", "status": "PASS", "detail": "Usage: summarize [options] [input]  Summarize web pages and YouTube links (uses direct provider API keys).  "},
+  {"name": "tmux installed", "status": "PASS", "detail": "tmux 3.4 "},
+  {"name": "ffmpeg installed (video-frames)", "status": "PASS", "detail": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers "},
+  {"name": "summarize model call (Gemini)", "status": "WARN", "detail": "Unsupported file type: hosts (application/octet-stream) This build can only send text or images to the model. Try a text-like file, an image, or convert this file to text first. "},
+  {"name": "gog account listing", "status": "WARN", "detail": "read token for bbbybus2@gmail.com: read token: aes.KeyUnwrap(): integrity check failed. "},
+  {"name": "tavily search script", "status": "PASS", "detail": " "}
+  ]
+}
