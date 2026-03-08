@@ -41,7 +41,7 @@ run_check() {
   local name="$1" cmd="$2" severity="${3:-fail}"
   local out rc
   set +e
-  out="$(bash -lc "$cmd" 2>&1)"
+  out="$(bash -c "$cmd" 2>&1)"
   rc=$?
   set -e
 
